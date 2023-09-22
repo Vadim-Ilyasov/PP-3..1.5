@@ -16,7 +16,6 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Min;
-import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
 import java.io.Serializable;
 import java.util.Collection;
@@ -26,16 +25,13 @@ import java.util.Collection;
 @Entity
 @Table(name = "user")
 public class User implements UserDetails, Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
-
     @Column(name = "name")
     private String name;
-
-
 
     @Column(name = "surname")
     private String surname;

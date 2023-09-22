@@ -5,7 +5,9 @@ import kata.spring.boot.bootstrap_REST_JS.entity.User;
 
 import java.util.List;
 
+
 public interface UserService  {
+
     List<User> getUsersList();
     User getById(Long id);
     void addUser(User user);

@@ -10,31 +10,9 @@ import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.Collection;
 
+
 @Component
 public class Util {
-//    private final RoleService roleService;
-//    private final UserService userService;
-//
-//    @Autowired
-//    public Util(RoleService roleService, UserService userService) {
-//        this.roleService = roleService;
-//        this.userService = userService;
-//    }
-//
-//    @PostConstruct
-//    public void initialization() {
-//        Role adminRole = new Role("ROLE_ADMIN");
-//        Role userRole = new Role("ROLE_USER");
-//
-//        roleService.save(adminRole);
-//        roleService.save(userRole);
-//        User admin = new User("Admin", "Admin", (byte)10, "admin", "admin", Set.of(adminRole, userRole));
-//        userService.addUser(admin);
-//
-//        roleService.save(userRole);
-//        User user = new User("User","User", (byte)10, "user", "user", Set.of(userRole));
-//        userService.addUser(user);
-//    }
 
     private final RoleRepository roleRepository;
     private final UserService userService;
@@ -43,7 +21,6 @@ public class Util {
         this.roleRepository = roleRepository;
         this.userService = userService;
     }
-
 
     @PostConstruct
     public void initUsers() {

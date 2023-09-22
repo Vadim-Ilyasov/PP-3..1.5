@@ -3,9 +3,10 @@ package kata.spring.boot.bootstrap_REST_JS.service;
 import kata.spring.boot.bootstrap_REST_JS.entity.Role;
 import kata.spring.boot.bootstrap_REST_JS.repository.RoleRepository;
 import org.springframework.stereotype.Service;
-
 import javax.transaction.Transactional;
 import java.util.List;
+
+
 @Service
 public class RoleServiceImpl implements RoleService {
 

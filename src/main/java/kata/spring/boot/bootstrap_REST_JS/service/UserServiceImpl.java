@@ -2,11 +2,9 @@ package kata.spring.boot.bootstrap_REST_JS.service;
 
 import kata.spring.boot.bootstrap_REST_JS.entity.User;
 import kata.spring.boot.bootstrap_REST_JS.repository.UserRepository;
-
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 
 import java.util.List;
 
@@ -21,7 +19,6 @@ public class UserServiceImpl implements UserService {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
     }
-
 
     @Override
     @Transactional

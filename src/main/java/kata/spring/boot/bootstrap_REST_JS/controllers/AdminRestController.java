@@ -4,7 +4,6 @@ import kata.spring.boot.bootstrap_REST_JS.entity.Role;
 import kata.spring.boot.bootstrap_REST_JS.entity.User;
 import kata.spring.boot.bootstrap_REST_JS.service.RoleService;
 import kata.spring.boot.bootstrap_REST_JS.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -23,10 +22,11 @@ import java.util.List;
 @RestController
 @RequestMapping("api/admin")
 public class AdminRestController {
+
     private final UserService userService;
     private final RoleService roleService;
 
-    @Autowired
+
     public AdminRestController(UserService userService, RoleService roleService) {
         this.userService = userService;
         this.roleService = roleService;

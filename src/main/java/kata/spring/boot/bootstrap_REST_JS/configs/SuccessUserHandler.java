@@ -12,8 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Set;
 
+
 @Component
 public class SuccessUserHandler implements AuthenticationSuccessHandler {
+
     private final HttpServletResponse httpServletResponse;
 
     public SuccessUserHandler(HttpServletResponse httpServletResponse) {
